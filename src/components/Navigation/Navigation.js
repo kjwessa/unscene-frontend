@@ -10,11 +10,6 @@ function Navigation() {
           </a>
         </li>
         <li className="navigation__item">
-          <a href="/roadmap" className="navigation__link">
-            Roadmap
-          </a>
-        </li>
-        <li className="navigation__item">
           <a href="/about" className="navigation__link">
             About
           </a>
