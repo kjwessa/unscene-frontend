@@ -15,3 +15,9 @@
   color: #fff;
   margin: 0;
 }
+
+.header__link {
+  text-decoration: none;
+  color: inherit; /* This ensures that the link uses the same color as its surrounding text */
+  cursor: pointer; /* Changes the cursor to a hand icon when hovering over the link */
+}
