@@ -4,7 +4,7 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
   return (
     <main className="main">
       {mainPhoto && (
-        <img className="main__image" src={mainPhoto.urls.full} alt={mainPhoto.alt_description} />
+        <img className="main__image" src={mainPhoto?.urls?.full} alt={mainPhoto?.alt_description} />
       )}
 
       <div className="main__thumbnails">
@@ -33,20 +33,20 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
         {prevPhoto && (
           <img
             className="main__thumbnail"
-            src={prevPhoto.urls.small}
-            alt={prevPhoto.alt_description}
+            src={prevPhoto?.urls?.small}
+            alt={prevPhoto?.alt_description}
           />
         )}
         <img
           className="main__thumbnail main__thumbnail--active"
-          src={mainPhoto.urls.small}
-          alt={mainPhoto.alt_description}
+          src={mainPhoto?.urls?.small}
+          alt={mainPhoto?.alt_description}
         />
         {nextPhoto && (
           <img
             className="main__thumbnail"
-            src={nextPhoto.urls.small}
-            alt={nextPhoto.alt_description}
+            src={nextPhoto?.urls?.small}
+            alt={nextPhoto?.alt_description}
           />
         )}
 

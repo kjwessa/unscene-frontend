@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <nav className="navigation">
       <ul className="navigation__list">
         <li className="navigation__item">
-          <a href="/" className="navigation__link">
+          <Link to="/" className="navigation__link">
             Home
-          </a>
+          </Link>
         </li>
         <li className="navigation__item">
-          <a href="/about" className="navigation__link">
+          <Link to="/about" className="navigation__link">
             About
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

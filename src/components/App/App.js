@@ -1,10 +1,13 @@
 //* Import React
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 //* Import the components
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
+import About from "../About/About";
+import Preloader from "../Preloader/Preloader";
 
 //* Import the Styles
 import "../../index.css";
@@ -59,22 +62,33 @@ function App() {
   console.log("Rendering App component...");
 
   return (
-    <div className="app">
-      <Header />
+    <Router>
+      <div className="app">
+        <Header />
 
-      {isLoading ? (
-        console.log("Still loading, will display photos once done...")
-      ) : (
-        <Main
-          mainPhoto={photos[currentIndex]}
-          nextPhoto={photos[currentIndex + 1]}
-          prevPhoto={photos[currentIndex - 1]}
-          onNextClick={handleNextPhoto}
-          onPrevClick={handlePreviousPhoto}
-        />
-      )}
-      <Footer />
-    </div>
+        {isLoading ? (
+          <Preloader />
+        ) : (
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Main
+                  mainPhoto={photos[currentIndex]}
+                  nextPhoto={photos[currentIndex + 1]}
+                  prevPhoto={photos[currentIndex - 1]}
+                  onNextClick={handleNextPhoto}
+                  onPrevClick={handlePreviousPhoto}
+                />
+              }
+            />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        )}
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
