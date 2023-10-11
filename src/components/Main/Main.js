@@ -7,7 +7,7 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
         <img className="main__image" src={mainPhoto.urls.full} alt={mainPhoto.alt_description} />
       )}
 
-      <div className="main__navigation">
+      <div className="main__thumbnails">
         <div
           className={`main__button main__button--previous ${
             !prevPhoto ? "main__button--inactive" : ""
@@ -30,6 +30,26 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
           </svg>
         </div>
 
+        {prevPhoto && (
+          <img
+            className="main__thumbnail"
+            src={prevPhoto.urls.small}
+            alt={prevPhoto.alt_description}
+          />
+        )}
+        <img
+          className="main__thumbnail main__thumbnail--active"
+          src={mainPhoto.urls.small}
+          alt={mainPhoto.alt_description}
+        />
+        {nextPhoto && (
+          <img
+            className="main__thumbnail"
+            src={nextPhoto.urls.small}
+            alt={nextPhoto.alt_description}
+          />
+        )}
+
         <div
           className={`main__button main__button--next ${
             !nextPhoto ? "main__button--inactive" : ""
@@ -51,28 +71,6 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
             />
           </svg>
         </div>
-      </div>
-
-      <div className="main__thumbnails">
-        {prevPhoto && (
-          <img
-            className="main__thumbnail"
-            src={prevPhoto.urls.small}
-            alt={prevPhoto.alt_description}
-          />
-        )}
-        <img
-          className="main__thumbnail main__thumbnail--active"
-          src={mainPhoto.urls.small}
-          alt={mainPhoto.alt_description}
-        />
-        {nextPhoto && (
-          <img
-            className="main__thumbnail"
-            src={nextPhoto.urls.small}
-            alt={nextPhoto.alt_description}
-          />
-        )}
       </div>
     </main>
   );
