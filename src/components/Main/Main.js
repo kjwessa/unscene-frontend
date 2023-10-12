@@ -1,10 +1,20 @@
 import React from "react";
+import arrowLeft from "../../images/arrowLeft.png";
+import arrowRight from "../../images/arrowRight.png";
 
 function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
   return (
     <main className="main">
       {mainPhoto && (
-        <img className="main__image" src={mainPhoto?.urls?.full} alt={mainPhoto?.alt_description} />
+        <div
+          className="main__image-container"
+          style={{ backgroundImage: `url(${mainPhoto?.urls?.full})` }}>
+          <img
+            className="main__image"
+            src={mainPhoto?.urls?.full}
+            alt={mainPhoto?.alt_description}
+          />
+        </div>
       )}
 
       <div className="main__thumbnails">
@@ -13,21 +23,8 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
             !prevPhoto ? "main__button--inactive" : ""
           }`}
           onClick={onPrevClick}>
-          {/* SVG for left arrow */}
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M15 18L9 12L15 6"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          {/* Image for left arrow */}
+          <img className="main__thumbnail_icon" src={arrowLeft} alt="Previous" />
         </div>
 
         {prevPhoto && (
@@ -55,21 +52,8 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
             !nextPhoto ? "main__button--inactive" : ""
           }`}
           onClick={onNextClick}>
-          {/* SVG for right arrow */}
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M9 18L15 12L9 6"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          {/* Image for right arrow */}
+          <img className="main__thumbnail_icon" src={arrowRight} alt="Next" />
         </div>
       </div>
     </main>

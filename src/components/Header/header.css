@@ -4,10 +4,10 @@
   align-items: center;
   padding: 10px 30px;
   background-color: #1b1b1b;
-  border-radius: 30px; /* Giving it a rounded pill-like appearance */
+  border-radius: 16px; /* Giving it a rounded pill-like appearance */
   margin: 20px 0;
-  width: 95%; /* Slightly less than full width for a bit of margin */
-  max-width: 1200px;
+  width: 100%; /* Slightly less than full width for a bit of margin */
+  max-width: 1360px;
 }
 
 .header__title {
