@@ -5,17 +5,18 @@ function About() {
     <section className="about">
       <h2 className="about__title">About Unscene</h2>
       <p className="about__description">
-        Unscene is an immersive exploration of Earth's most captivating visual experiences. We bring
-        forward the unnoticed beauty of our planet, sourced from the expansive galleries of
-        Unsplash. Dive deep and be a part of the Unscene.
+        Unscene is a tribute to our planet's astonishing beauty. In today's digital age, while we're
+        often engulfed in the humdrum of everyday life, we sometimes forget to pause and appreciate
+        the natural splendors surrounding us. Unscene offers that serene pause, acting as a window
+        to the breathtaking landscapes that our world hosts.
       </p>
 
       <h3 className="about__subtitle">Technologies Used</h3>
       <ul className="about__tech-list">
         <li>React</li>
-        <li>react-router-dom</li>
+        <li>Vanilla JS</li>
         <li>Unsplash API</li>
-        <li>Custom CSS with BEM methodology</li>
+        <li>CSS with BEM methodology</li>
       </ul>
 
       <h3 className="about__subtitle">Roadmap</h3>

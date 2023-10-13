@@ -4,9 +4,9 @@
   align-items: center;
   padding: 10px 30px;
   background-color: #1b1b1b;
-  border-radius: 16px; /* Giving it a rounded pill-like appearance */
+  border-radius: 16px;
   margin: 20px 0;
-  width: 100%; /* Slightly less than full width for a bit of margin */
+  width: 100%;
   max-width: 1360px;
 }
 
@@ -18,6 +18,6 @@
 
 .header__link {
   text-decoration: none;
-  color: inherit; /* This ensures that the link uses the same color as its surrounding text */
-  cursor: pointer; /* Changes the cursor to a hand icon when hovering over the link */
+  color: inherit;
+  cursor: pointer;
 }

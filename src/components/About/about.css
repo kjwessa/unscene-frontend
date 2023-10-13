@@ -1,15 +1,15 @@
 .about {
   padding: 20px;
   font-family: "Arial", sans-serif;
-  color: #f1f1f1; /* Lighter color for better contrast against a dark background */
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for the about content */
-  border-radius: 10px; /* Rounded corners for aesthetics */
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
 }
 
 .about__title,
 .about__subtitle {
   margin-top: 20px;
-  color: #e1e1e1; /* Slightly lighter shade for headings */
+  color: #e1e1e1;
 }
 
 .about__description {
