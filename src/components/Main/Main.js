@@ -23,7 +23,6 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
             !prevPhoto ? "main__button--inactive" : ""
           }`}
           onClick={onPrevClick}>
-          {/* Image for left arrow */}
           <img className="main__thumbnail_icon" src={arrowLeft} alt="Previous" />
         </div>
 
@@ -52,7 +51,6 @@ function Main({ mainPhoto, nextPhoto, prevPhoto, onNextClick, onPrevClick }) {
             !nextPhoto ? "main__button--inactive" : ""
           }`}
           onClick={onNextClick}>
-          {/* Image for right arrow */}
           <img className="main__thumbnail_icon" src={arrowRight} alt="Next" />
         </div>
       </div>

@@ -15,22 +15,16 @@ import "../../index.css";
 import { getPhotos } from "../../utils/api";
 
 function App() {
-  console.log("App component is being initialized...");
-
   const [photos, setPhotos] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    console.log("useEffect triggered to fetch photos from API...");
     async function fetchPhotos() {
       try {
-        console.log("Starting the fetching process...");
         const fetchedPhotos = await getPhotos();
-        console.log("Starting the fetching process...");
         setPhotos(fetchedPhotos);
       } catch (error) {
-        console.error("Error fetching photos:", error);
       } finally {
         setIsLoading(false);
       }
@@ -46,8 +40,6 @@ function App() {
   const handlePreviousPhoto = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
   };
-
-  console.log("Rendering App component...");
 
   return (
     <Router>

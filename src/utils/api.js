@@ -8,8 +8,6 @@ const requestOptions = {
 };
 
 export async function getPhotos() {
-  console.log("Initiating API call to fetch photos...");
-
   try {
     const response = await fetch(`${baseUrl}photos?per_page=10`, requestOptions);
 
