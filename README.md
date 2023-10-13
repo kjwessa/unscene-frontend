@@ -8,6 +8,10 @@ Unscene is a tribute to our planet's astonishing beauty. In today's digital age,
 
 **Built with:** [JavaScript](https://www.javascript.com/) • [React](https://react.dev/) • [React Router](https://reactrouter.com/)
 
+## Access the project
+
+[Access the app here](https://keen-nougat-eca329.netlify.app/)
+
 ### Features
 
 - The 10 latest photos from the Unsplash API
