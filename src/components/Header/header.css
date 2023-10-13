@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #1b1b1b;
+  border-radius: 16px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1360px;
+}
+
+.header__title {
+  font-size: 1.5 rem;
+  color: #fff;
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item + .navigation__item {
+  margin-left: 20px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.navigation__link:hover {
+  color: #fff;
+}

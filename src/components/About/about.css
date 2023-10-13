@@ -1,0 +1,30 @@
+.about {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.about__title,
+.about__subtitle {
+  margin-top: 20px;
+  color: #e1e1e1;
+}
+
+.about__description {
+  margin-top: 10px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.about__tech-list,
+.about__roadmap {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.about__tech-list li,
+.about__roadmap li {
+  margin: 8px 0;
+}
